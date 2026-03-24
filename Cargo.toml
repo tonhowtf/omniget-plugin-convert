@@ -2,6 +2,9 @@
 name = "omniget-plugin-convert"
 version = "0.1.0"
 edition = "2021"
+[lib]
+crate-type = ["cdylib"]
+
 
 [dependencies]
 tauri = { version = "2", features = [] }
@@ -11,4 +14,4 @@ serde_json = "1"
 anyhow = "1"
 tracing = "0.1"
 tokio-util = { version = "0.7", features = ["rt"] }
-omniget-core = { path = "../omniget-core", features = ["desktop"] }
+omniget-core = { git = "https://github.com/tonhowtf/omniget", path = "src-tauri/omniget-core", features = ["desktop"] }
