@@ -11,19 +11,36 @@
   "nav": [
     {
       "route": "/convert",
-      "label": { "en": "Convert", "pt": "Converter", "zh": "转换", "ja": "変換", "fr": "Convertir", "it": "Converti", "el": "Μετατροπή" },
+      "label": {
+        "en": "Convert",
+        "pt": "Converter",
+        "zh": "转换",
+        "ja": "変換",
+        "fr": "Convertir",
+        "it": "Converti",
+        "el": "Μετατροπή"
+      },
       "icon_svg": "M20 10H4l4-4 M4 14h16l-4 4",
       "group": "secondary",
       "order": 25
     }
   ],
   "events": {
-    "progress": ["convert-progress"],
-    "complete": ["convert-complete"]
+    "progress": [
+      "convert-progress"
+    ],
+    "complete": [
+      "convert-complete"
+    ]
   },
   "capabilities": [
     "core:events",
     "core:toast",
     "core:tools"
-  ]
+  ],
+  "routes": {
+    "/convert": "frontend/build/index.js",
+    "/convert/*": "frontend/build/index.js"
+  },
+  "i18n": "i18n/"
 }
