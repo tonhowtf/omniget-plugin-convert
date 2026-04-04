@@ -1128,7 +1128,7 @@ dependencies = [
 
 [[package]]
 name = "omniget-plugin-convert"
-version = "0.2.0"
+version = "1.0.0"
 dependencies = [
  "anyhow",
  "omniget-core",
