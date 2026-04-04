@@ -1,7 +1,7 @@
 {
   "id": "convert",
   "name": "Media Converter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "min_omniget_version": "0.4.0",
   "description": "Convert videos and audio between formats with FFmpeg and GPU hardware acceleration.",
   "author": "tonhowtf",
