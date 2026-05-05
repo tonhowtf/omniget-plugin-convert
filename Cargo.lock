@@ -1094,7 +1094,6 @@ dependencies = [
 [[package]]
 name = "omniget-core"
 version = "0.2.16"
-source = "git+https://github.com/tonhowtf/omniget#13ea0545e89cce4a1e482d0c4c89ef97005523a7"
 dependencies = [
  "aes",
  "anyhow",
@@ -1104,6 +1103,7 @@ dependencies = [
  "chrono",
  "dirs",
  "filetime",
+ "flate2",
  "futures",
  "m3u8-rs",
  "open",
@@ -1128,7 +1128,7 @@ dependencies = [
 
 [[package]]
 name = "omniget-plugin-convert"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "anyhow",
  "omniget-core",
@@ -1142,8 +1142,7 @@ dependencies = [
 
 [[package]]
 name = "omniget-plugin-sdk"
-version = "0.1.0"
-source = "git+https://github.com/tonhowtf/omniget#13ea0545e89cce4a1e482d0c4c89ef97005523a7"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "async-trait",

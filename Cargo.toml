@@ -1,6 +1,6 @@
 [package]
 name = "omniget-plugin-convert"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 
 [lib]
@@ -15,3 +15,7 @@ tracing = "0.1"
 tokio-util = { version = "0.7", features = ["rt"] }
 omniget-core = { git = "https://github.com/tonhowtf/omniget", features = ["desktop"] }
 omniget-plugin-sdk = { git = "https://github.com/tonhowtf/omniget" }
+
+[patch."https://github.com/tonhowtf/omniget"]
+omniget-plugin-sdk = { path = "../omniget/src-tauri/omniget-plugin-sdk" }
+omniget-core = { path = "../omniget/src-tauri/omniget-core" }
